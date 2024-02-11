@@ -1,0 +1,43 @@
+@keyframes animateCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes flickering {
+    0% {
+        color: #4ec7ff;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: #4ec7ff;
+    }
+}
+
+p {
+    font-family: 'Press Start 2P', cursive;
+    margin-left: auto;
+    margin-top: 200px;
+    margin-right: auto;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 0px;
+    color: #4ec7ff;
+    text-shadow: 0px 0px 1000px #38d1ff;
+    filter: drop-shadow(color=#38d1ff, offx=0, offy=0);
+}
+
+.flickering {
+    animation: flickering 0.7s;
+    -webkit-animation: flickering 0.88s;
+    animation-iteration-count: infinite;
+}
+
+.bigger {
+    font-size: 135px;
+}
